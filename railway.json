@@ -1,0 +1,9 @@
+{
+  "root": "backend",
+  "build": {
+    "command": "npm run build"
+  },
+  "start": {
+    "command": "npm start"
+  }
+}
