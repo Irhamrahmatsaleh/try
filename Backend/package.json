@@ -6,10 +6,9 @@
    "scripts": {
       "build": "tsc && prisma generate",
       "start": "node build/index.js",
-      "dev": "nodemon index.ts",
-      "typeorm": "typeorm-ts-node-commonjs",
-      "migration:generate": "npx typeorm-ts-node-commonjs migration:generate src/migrations/circleMigration -d src/data-source.ts",
-      "migration:run": "npx typeorm-ts-node-commonjs migration:run -d src/data-source.ts",
+      "dev": "ts-node src/index.ts",
+      "prisma:migrate": "npx prisma migrate deploy",
+      "prisma:generate": "npx prisma generate",
       "swagger": "node ./src/swagger.js",
       "test": "jest"
    },
