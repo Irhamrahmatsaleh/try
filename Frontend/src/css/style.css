@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    display: flex;
+    align-items: start;
+    margin-top: 1rem;
+}
+
+.sidebar {
+    width: 25%;
+    height: 1vh;
+}
+
+.profile {
+    width: 35%;
+}
+
+.threads {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 40%;
+    border-left: 1px solid rgba(110, 110, 110, 0.333);
+    border-right: 1px solid rgba(110, 110, 110, 0.333);
+}
+
+h2 {
+    margin-left: 1rem;
+    color: rgb(227, 227, 227);
+}
+
+.threadsForm {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid rgb(110, 110, 110, 0.333);
+}
+
+.threadsForm img{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.threadsForm form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.threadsForm textarea {
+    width: 360px;
+    height: 40px;
+    border: none;
+    color: rgba(255, 255, 255, 0.496);
+    resize: none;
+    text-decoration: none;
+}
+
+.threadsForm button {
+    width: 60px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.card {
+    display: flex;
+    align-items: start;
+    border-bottom: 1px solid rgb(110, 110, 110, 0.333);
+    margin: 1rem;
+}
+
+.picture > img{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.content {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.user {
+    display: flex;
+}
+
+.user p {
+    font-size: small;
+    color: rgb(199, 199, 199);
+    margin-right: 0.5rem;
+    margin-bottom: 0.33rem;
+}
+
+.username {
+    font-weight: bold;
+    color: white !important;
+}
+
+.messages {
+    margin-bottom: 0.5rem;
+}
+
+.messages p {
+    margin-bottom: 0.33rem;
+}
+
+.messages img {
+    width: 420px;
+    border-radius: 4px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 0.33rem;
+    margin-bottom: 0.5rem;
+}
+
+.icons p {
+    margin-right: 0.5rem;
+    color: rgb(160, 160, 160);
+    font-size: small;
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+
+    .profile {
+        display: none;
+    }
+
+    .threads {
+        width: 100%;
+    }
+
+    .messages img {
+        width: 240px;
+    }
+}

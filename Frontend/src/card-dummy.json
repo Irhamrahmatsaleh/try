@@ -1,0 +1,35 @@
+{
+    "status": "success",
+    "data": {
+      "threads": [
+        {
+          "id": 1,
+          "content": "Ini adalah contoh tweet pertama.",
+          "user": {
+            "id": 101,
+            "username": "user1",
+            "name": "Nama Pengguna 1",
+            "profile_picture": "https://example.com/user1.jpg"
+          },
+          "created_at": "2023-07-31T12:34:56Z",
+          "likes": 10,
+          "reply": 5,
+          "isLiked":true
+        },
+        {
+          "id": 2,
+          "content": "Ini adalah contoh tweet kedua.",
+          "user": {
+            "id": 102,
+            "username": "user2",
+            "name": "Nama Pengguna 2",
+            "profile_picture": "https://example.com/user2.jpg"
+          },
+          "created_at": "2023-07-31T13:45:21Z",
+          "likes": 15,
+          "reply": 3,
+          "isLiked":false
+        }
+      ]
+    }
+  }
